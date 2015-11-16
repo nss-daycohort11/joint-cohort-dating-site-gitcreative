@@ -283,3 +283,13 @@ ul, menu, dir {
 #form-container {
   display: hidden;
 }
+.browse-border {
+  border: 2px solid white;
+  padding: 10px;
+  height: 100%;
+  width: 95%;
+}
+
+.browse-image {
+  margin: 75px;
+}
