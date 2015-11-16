@@ -4,4 +4,5 @@ define(function(require) {
   var h = require("hbs");
   var login = require("login");
   var fb = require("firebase");
+  var loginForm = require("login-form");
 });

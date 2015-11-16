@@ -279,3 +279,23 @@ ul, menu, dir {
 #networks .mail:hover {
 	color: #f39c12;
 }
+
+/* Log In */
+.user-login { 
+  text-align: center;
+  margin: 100px;
+
+
+}
+
+.user-input {
+  text-align: center;
+  width: 400px;
+}
+
+.form-control {
+  margin: 10px auto;
+}
+
+
+
