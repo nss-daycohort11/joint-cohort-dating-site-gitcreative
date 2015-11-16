@@ -279,3 +279,14 @@ ul, menu, dir {
 #networks .mail:hover {
 	color: #f39c12;
 }
+
+.browse-border {
+  border: 2px solid white;
+  padding: 10px;
+  height: 100%;
+  width: 95%;
+}
+
+.browse-image {
+  margin: 75px;
+}
