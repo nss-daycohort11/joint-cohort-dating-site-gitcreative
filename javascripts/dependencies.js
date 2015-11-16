@@ -3,4 +3,5 @@ define(function(require) {
   var b = require("bootstrap");
   var h = require("hbs");
   var login = require("login");
+  var loginForm = require("login-form");
 });
