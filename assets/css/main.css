@@ -132,13 +132,13 @@ a:active {
   margin-top: -90px; }
 
 #hero {
-  background: #1abc9c; }
+  background: #473E51; }
 
 #work {
-  background: #3498db; }
+  background: #211D2B; }
 
 #networks {
-  background: #474e5d; }
+  background: #AF0023; }
 
 .down-arrow {
   position: absolute;
@@ -283,6 +283,7 @@ ul, menu, dir {
 #form-container {
   display: hidden;
 }
+
 .browse-border {
   border: 2px solid white;
   padding: 10px;
@@ -308,4 +309,12 @@ ul, menu, dir {
 
 .form-control {
   margin: 10px auto;
+
+}
+.userInfo {
+  background-color: #211D2B;
+  z-index: -1;
+  border: 2px dashed white;
+  padding: 25px;
+
 }
