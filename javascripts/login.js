@@ -1,8 +1,5 @@
 define(function(require) {
-  var $ = require("jquery");
-  var b = require("bootstrap");
-  var h = require("hbs");
-  var fb = require("firebase");
+  var Firebase = require("firebase");
   var loginForm = require("login-form");
   //get a reference to our Firebase app
   var ref = new Firebase("https://lovetohate.firebaseio.com");
@@ -30,6 +27,7 @@ define(function(require) {
         console.log("Login Failed!", error);
       } else {
         console.log("Authenticated successfully with payload:", authData);
+        console.log("Authenticated successfully with payload:", authData.uid);
       }
     });
   });//end login
