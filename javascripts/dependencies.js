@@ -9,5 +9,6 @@ define(function(require) {
   var profileForm = require("profile-form");
   var formButtons = require("form-button-info");
   var browseControl = require("browse");
+  var pageView = require("page-view");
 
 });
