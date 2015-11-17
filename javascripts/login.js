@@ -3,10 +3,12 @@ define(function(require) {
   var b = require("bootstrap");
   var h = require("hbs");
   var fb = require("firebase");
+  var loginForm = require("login-form");
   //get a reference to our Firebase app
   var ref = new Firebase("https://lovetohate.firebaseio.com");
   //create new user/account when create account button is clicked
   $( "#create" ).click(function() {
+    console.log("button works");
     ref.createUser({
       email    : $('#email').val(),
       password : $('#password').val()
@@ -21,6 +23,7 @@ define(function(require) {
   });//end create new user
   //log in user that is already set up
   $( "#log-in" ).click(function() {
+    console.log("button works");
     ref.authWithPassword({
       email    : $('#email').val(),
       password : $('#password').val()

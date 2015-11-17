@@ -284,7 +284,7 @@ ul, menu, dir {
 .user-login { 
   text-align: center;
   margin: 100px;
-
+  color: #FAC02E;
 
 }
 
@@ -297,5 +297,8 @@ ul, menu, dir {
   margin: 10px auto;
 }
 
+.hidden {
+  display: hidden;
+}
 
 
