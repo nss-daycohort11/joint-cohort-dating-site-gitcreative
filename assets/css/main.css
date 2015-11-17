@@ -113,7 +113,9 @@ a:active {
 #hero,
 #work,
 #networks {
-  position: relative; }
+  position: relative; 
+  z-index: -2;
+}
 
 .hero-block,
 .footer-block {
@@ -132,13 +134,13 @@ a:active {
   margin-top: -90px; }
 
 #hero {
-  background: #1abc9c; }
+  background: #473E51; }
 
 #work {
-  background: #3498db; }
+  background: #211D2B; }
 
 #networks {
-  background: #474e5d; }
+  background: #AF0023; }
 
 .down-arrow {
   position: absolute;
@@ -158,7 +160,6 @@ a:active {
 #work .showcase {
   width: 100%;
   padding: 0px;
-  
    }
 
 .showcase-tiles {
@@ -258,38 +259,22 @@ ul, menu, dir {
 	padding-top: 200px;
 }
 
-#networks i {
-	font-size: 60px;
-	color: white;
-	padding: 18px;
-}
-
-#networks .dribbble:hover {
-	color: #ed6297;
-}
-
-#networks .facebook:hover {
-	color: #3b5998;
-}
-
-#networks .twitter:hover {
-	color: #2094CA;
-}
-
-#networks .mail:hover {
-	color: #f39c12;
-}
-
 #form-container {
   display: hidden;
-}
-.browse-border {
-  border: 2px solid white;
-  padding: 10px;
-  height: 100%;
-  width: 95%;
 }
 
 .browse-image {
   margin: 75px;
+}
+
+.userInfo {
+  content:"";
+  background-color: #211D2B;
+  border:2px dashed white;
+  height: 100%;
+  z-index: -1;
+}
+
+.heart-image {
+  padding:10px;
 }
