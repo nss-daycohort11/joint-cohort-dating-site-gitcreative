@@ -9,52 +9,162 @@
               </ul>
           </div>
           <div class="showcase-info">
-              <h2 class="mb-7">Would you rather?</h2>
-                  <input type="text" name="name" placeholder="Name">
-                  <input type="text" name="age" placeholder="Age">
-                  <input type="text" name="location" placeholder="Location">
 
-                  <input type="text" placeholder="Image Url">
+            <h2 class="mb-7">Love to Hate Profile Setup</h2>
+            
+                <input type="text" class="user-input" name="name" placeholder="NAME">
+                <input type="text" class="user-input" name="gender" placeholder="GENDER">
+                <input type="text" class="user-input" name="age" placeholder="AGE">
+                <input type="text" class="user-input" name="location" placeholder="LOCATION">
 
-                  <!-- first question -->
-                  <input type="radio" name="group1" value="starwars">Star Wars
-                  <input type="radio" name="group1" value="startrek">Star Trek
+                <input type="url" class="user-input" placeholder="IMAGE URL">
 
-                  <!-- second question -->
-                  <input type="radio" name="group2" value="beach">Beach
-                  <input type="radio" name="group2" value="mountains">Mountains
+            <h3 class="mb-7">Things you HATE</h3>
 
-                  <!-- third question -->
-                  <input type="radio" name="group3" value="hotweather">Hot Weather
-                  <input type="radio" name="group3" value="coldweather">Cold Weather
+            <!-- first question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Star Wars 
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Star Trek
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                  <!-- fourth question -->
-                  <input type="radio" name="group4" value="cake">Cake
-                  <input type="radio" name="group4" value="pie">Pie
+            <!-- second question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Beach
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Mountains
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                  <!-- fifth question -->
-                  <input type="radio" name="group5" value="cats">Cats
-                  <input type="radio" name="group5" value="dogs">Dogs
+            <!-- third question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Hot Weather
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Cold Weather
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                  <!-- sixth question -->
-                  <input type="radio" name="group6" value="god">God 
-                  <input type="radio" name="group6" value="satan">Satan
+            <!-- fourth question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Cake
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Pie
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                  <!-- seventh question -->
-                  <input type="radio" name="group7" value="republican">Republican
-                  <input type="radio" name="group7" value="democrat">Democrat
+            <!-- fifth question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Cats
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Dogs
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                  <!-- eighth question -->
-                  <input type="radio" name="group8" value="windows">Windows
-                  <input type="radio" name="group8" value="apple">Apple
+            <!-- sixth question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> God
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Satan
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                  <!-- ninth question -->
-                  <input type="radio" name="group9" value="polcorrect">Politically Correct 
-                  <input type="radio" name="group9" value="polincorrect">Politically Incorrect
+            <!-- seventh question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Republican
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Democrat
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                  <!-- tenth question -->
-                  <input type="radio" name="group10" value="carrot">Carrot Top
-                  <input type="radio" name="group10" value="blieber">Justin Bieber
+            <!-- eighth question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Windows
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Apple
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- ninth question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Politically Correct
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Politically Incorrect
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- tenth question -->
+            <div class="row">
+              <div class="col-md-12"></div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Carrot Top
+                  </label>
+                  <label class="btn btn-danger btn-lg">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Justin Bieber
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            {{!-- form submit button --}}
+            <button type="button" class="btn btn-danger btn-lg">Full of Hate, Ready to Date</button>
+            {{!-- <button type="submit"></button> --}}
+            
           </div>
       </div>
   </section>
