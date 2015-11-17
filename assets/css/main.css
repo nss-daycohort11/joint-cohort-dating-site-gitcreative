@@ -99,7 +99,9 @@ a:active {
       transition: background 1s; }
 
 .mb-7 {
-  margin-bottom: 70px; }
+  margin: 20px 0 20px 0; 
+  color: #FAC02E;
+}
   
 .centered {
 	text-align: center;
@@ -132,13 +134,31 @@ a:active {
   margin-top: -90px; }
 
 #hero {
-  background: #1abc9c; }
+  background: #493D53; }
 
 #work {
-  background: #3498db; }
+  background: #231D29; }
 
 #networks {
-  background: #474e5d; }
+  background: #B90025; }
+
+button.btn-danger {
+  background: #B90025;
+  color: white;
+  margin: 1em;
+}
+
+.btn-danger {
+  background: #B90025;
+}
+
+label.btn {
+  width: 200px;
+  height: 45px;
+  background: white;
+  color: #231D29;
+  margin: 1px 0 1px 0;
+}
 
 .down-arrow {
   position: absolute;
@@ -167,10 +187,19 @@ a:active {
   display: table-row; }
 
 .showcase-info {
-  display: table-row; }
+  display: block; 
+  margin-top: 20px;
+}
 
 .showcase-info {
   text-align: center; }
+
+input.user-input {
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
 
 /* =========================
 
@@ -280,6 +309,20 @@ ul, menu, dir {
 	color: #f39c12;
 }
 
+#form-container {
+  display: hidden;}
+
+.browse-border {
+  border: 2px solid white;
+  padding: 10px;
+  height: 100%;
+  width: 95%;
+}
+
+.browse-image {
+  margin: 75px;
+}
+
 /* Log In */
 .user-login { 
   text-align: center;
@@ -295,6 +338,7 @@ ul, menu, dir {
 
 .form-control {
   margin: 10px auto;
+
 }
 
 .hidden {
@@ -302,3 +346,11 @@ ul, menu, dir {
 }
 
 
+}
+.userInfo {
+  background-color: #211D2B;
+  z-index: -1;
+  border: 2px dashed white;
+  padding: 25px;
+
+}
