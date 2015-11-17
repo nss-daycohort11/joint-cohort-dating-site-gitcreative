@@ -160,7 +160,6 @@ label.btn {
   margin: 1px 0 1px 0;
 }
 
-
 .down-arrow {
   position: absolute;
   bottom: 70px;
@@ -313,3 +312,37 @@ ul, menu, dir {
 #form-container {
   display: hidden;}
 
+.browse-border {
+  border: 2px solid white;
+  padding: 10px;
+  height: 100%;
+  width: 95%;
+}
+
+.browse-image {
+  margin: 75px;
+}
+
+/* Log In */
+.user-login { 
+  text-align: center;
+  margin: 100px;
+
+}
+
+.user-input {
+  text-align: center;
+  width: 400px;
+}
+
+.form-control {
+  margin: 10px auto;
+
+}
+.userInfo {
+  background-color: #211D2B;
+  z-index: -1;
+  border: 2px dashed white;
+  padding: 25px;
+
+}
