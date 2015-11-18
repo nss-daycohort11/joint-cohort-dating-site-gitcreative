@@ -374,7 +374,10 @@ ul, menu, dir {
 
 /*work section added because it was clipping on the network section*/
 
-
+.new-height {
+  height: 800px;
+  background-color: #231D29;
+}
 
 
 

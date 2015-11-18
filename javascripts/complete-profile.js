@@ -1,13 +1,25 @@
-// define(function(require) {
+define(function(require) {
+	var Firebase = require('firebase');
 
-//   function completeForm(formObjects) {
+	var ref = new Firebase("https://lovetohate.firebaseio.com/")
 
-//     require(['hbs!../templates/final-profile-template'], function (formTemplate) {
-//       $("#complete-form").html(formTemplate(formObjects));
-//     });
+	var profileData;
 
-//   };
+	//profile Id comes from the login page that gives the ID.
+  return {
+  	showProfile: function(profileID) {
+		console.log("profileID", profileID);
+	  	ref.child(profileID).once("value", function (snapshot) {
+			profileData = snapshot.val();
+			console.log("snap", profileData);
+	    	
+	    	//passing the ID to Handlebars and populating the dom.
+	    	require(['hbs!../templates/final-profile-template'], function (formTemplate) {
+	      		$("#complete-form").html(formTemplate({data: profileData}));
+	    	});
 
-//   completeForm();
+	  	});	
+  	}
+  }
 
-// });
+});

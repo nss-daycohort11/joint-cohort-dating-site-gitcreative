@@ -1,6 +1,8 @@
 define(function(require) {
   var Firebase = require("firebase");
   var loginForm = require("login-form");
+  var completeProfile = require('complete-profile');
+
   //get a reference to our Firebase app
   var ref = new Firebase("https://lovetohate.firebaseio.com");
   //create new user/account when create account button is clicked
@@ -28,6 +30,9 @@ define(function(require) {
       } else {
         console.log("Authenticated successfully with payload:", authData);
         console.log("Authenticated successfully with payload:", authData.uid);
+
+        //need to pass ID info to new function to populate the Dom.
+        completeProfile.showProfile(authData.uid);
       }
     });
   });//end login
