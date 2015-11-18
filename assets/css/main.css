@@ -354,3 +354,26 @@ ul, menu, dir {
   padding: 25px;
 
 }
+
+/*Bottom Graphics */
+.graphics {
+ 
+}
+
+.talk-bubble-l {
+  display: block;
+  float: left;
+  margin-right: 250px;
+
+}
+.talk-bubble-r {
+  float: right;
+  margin-left: 250px;
+
+}
+
+
+
+
+
+

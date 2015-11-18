@@ -5,9 +5,11 @@ define(function(require) {
   var fb = require("firebase");
   var loginForm = require("login-form");
   var loginLogo = require("login-logo");
+  var loginGraphics = require("login-bottomGraphics");
   var login = require("login");
   var profileForm = require("profile-form");
   var formButtons = require("form-button-info");
   var browseControl = require("browse");
+
 
 });
