@@ -1,6 +1,7 @@
 define(function(require) {
   var Firebase = require("firebase");
   var loginForm = require("login-form");
+  var userStorage = require("userStorage");
   var completeProfile = require('complete-profile');
 
   //get a reference to our Firebase app
@@ -14,6 +15,7 @@ define(function(require) {
       if (error) {
         console.log("Error creating user:", error);
       } else {
+        userStorage.setUser(userData);
         console.log("Successfully created user account with uid:", userData.uid);
         console.log("Successfully created user account:", userData);
       }

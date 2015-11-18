@@ -1,5 +1,7 @@
 define(function(require) {
   var Firebase = require('firebase');
+  var userStorage = require('userStorage');
+
   
   function populateForm(formObjects) {
 
@@ -15,14 +17,16 @@ define(function(require) {
   var myGender;
   var myAge;
   var myLocation;
-  var ref = new Firebase("https://lovetohate.firebaseio.com");
-  var myUserID = ref.getAuth();
-  var nameRef = new Firebase('https://lovetohate.firebaseio.com/' + myUserID.uid);
 
 
   console.log("this file is running");
 
+  // To create the user key in the `users` collection
   $("body").on("click", "#submit", function() {
+
+    var nameRef = new Firebase('https://lovetohate.firebaseio.com/users/' + userStorage.getUser().uid);
+
+
     console.log("I WORK YAYAYAY");
 
     myName = $('#name').val();
