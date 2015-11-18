@@ -1,25 +1,31 @@
 define(function(require) {
 
+//shows user's profile after user logs in
    $("body").on('click', "#log-in", function() {
-      $("#form-container").removeClass("hidden");
-      // $("#browse-container").removeClass("hidden");
+      //section two components
+      $("#complete-form").removeClass("hidden");
       $(".user-login").hide();
-
+      //section three components
+      $("#browse-container").removeClass("hidden");
   });
 
-   $("body").on('click', "#create", function() {
-      $("#form-container").removeClass("hidden");
-      // $("#browse-container").removeClass("hidden");
-      $(".user-login").hide();
-
+//shows form after user creates new account
+  $("body").on('click', "#create", function() {
+    //section two components
+    $("#form-container").removeClass("hidden");
+    $(".user-login").hide();
+    //section three components
+    $("#browse-container").hide();
   });
 
-  //  $("body").on('click', "#submit", function() {
-  //     $("#complete-form").removeClass("hidden");
-  //     $("#form-container").hide();
-  //     // $("#browse-container").removeClass("hidden");
-  //     $(".user-login").hide();
-
-  // });
+//shows user's profile after user creates new account and completes form
+  $("body").on('click', "#submit", function() {
+      //section two components
+      $("#complete-form").removeClass("hidden");
+      $("#form-container").hide();
+      $(".user-login").hide();
+      //section three components
+      $("#browse-container").removeClass("hidden");
+  });
  
 });

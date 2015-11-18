@@ -26,7 +26,7 @@ requirejs(
    "profile-image", 
    // "complete-profile",
    "form-button-info", 
-   "browse", 
+   // "browse", 
    "page-view"], 
   function(
     dependencies, 
@@ -38,7 +38,7 @@ requirejs(
     profileImg, 
     // profileComplete,
     formButtons, 
-    browseControl, 
+    // browseControl, 
     pageView) {
 
     /*

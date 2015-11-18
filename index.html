@@ -8,87 +8,78 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Small - Free Bootstrap 3 Theme</title>
+    <title>Love to Hate Dating Site</title>
 
     <!-- Bootstrap core CSS -->
-
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-   
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
+  <!-- scroll navigation bar -->
+  	<div class="nav">
+  		<a href="index.html#hero" class="scroll">section one</a>
+  		<a href="index.html#work" class="scroll">section two</a>
+  		<a href="index.html#networks" class="scroll">section three</a>
+  	</div>
 
-
-	<div class="nav">
-		<a href="index.html#hero" class="scroll">section one</a>
-		<a href="index.html#work" class="scroll">section two</a>
-		<a href="index.html#networks" class="scroll">section three</a>
-	</div>
+  <!-- section one -->
 	<section id="hero">
-		<div class="logo-login">
-
-			<!--Logo Template-->
-			
-		</div>
-    <div class="profile-img">
-
-    <!-- Profile Image Template -->
-
+    <div class="logo-login">
+  		<!-- load login-logo-template here -->
     </div>
+    <div class="profile-img">
+      <!-- load profile-img-template here -->
+    </div>
+    <!-- scroll down -->
 		<a href="index.html#work" class="scroll"><span class="down-arrow"></span></a>
 	</section>
-	
-	
+  <!-- end section one -->
+
+  <!-- section two -->
 	<section id="work">
-		
 		<div class="showcase-tiles">
-			<ul class="slides">
-				<!--Dribbble feed-->	
-			</ul>
+			<ul class="slides"></ul> 
 		</div>
-
-		<div id="form-container" class="showcase-info hidden"></div>
-
-    <div id="complete-form" class="showcase-info hidden"></div>
-
-			<!--User Input-->
-			<form>
-				<div class="user-login form-group">
-					<!--Log In template-->
-				</div>
-			</form>
-		
+    <!-- user email and password input here -->
+		<form>
+			<div class="user-login form-group">
+				<!-- load login-template here -->
+			</div>
+		</form>
+    
+    <div id="form-container" class="showcase-info hidden">
+      <!-- load profile-form-template here -->
+    </div>
+    <div id="complete-form" class="showcase-info hidden">
+      <!-- load final-profile-template here -->
+    </div>
 	</section>
+  <!-- end section two -->
 	
-	
+	<!-- section three -->
 	<section id="networks">
 		<div class="container">
-			<div id="bottom-graphics"></div>
-
-
-			<div id="browse-container" class="hidden"></div>
-
-    	</div>
-	
+			<div id="bottom-graphics">
+        <!-- load login-bottomGraphics-template here -->
+      </div>
+			<div id="browse-container" class="hidden">
+        <!-- load browse-template here -->
+      </div>
+    </div>
 	</section>
+  <!-- end section three -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jribbble.js"></script>
-    <script src="assets/js/site-ck.js"></script>
-    <script data-main="javascripts/dating-site" src="lib/bower_components/requirejs/require.js"></script>
+  <!-- Bootstrap core JavaScript from downloaded template -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jribbble.js"></script>
+  <script src="assets/js/site-ck.js"></script>
+  
+  <!-- this is linking to our actual dating site js files -->
+  <script data-main="javascripts/dating-site" src="lib/bower_components/requirejs/require.js"></script>
   </body>
 </html>
