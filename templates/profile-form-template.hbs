@@ -12,12 +12,12 @@
 
             <h2 class="mb-7">Love to Hate Profile Setup</h2>
             
-                <input type="text" class="user-input" name="name" placeholder="NAME">
-                <input type="text" class="user-input" name="gender" placeholder="GENDER">
-                <input type="text" class="user-input" name="age" placeholder="AGE">
-                <input type="text" class="user-input" name="location" placeholder="LOCATION">
+                <input type="text" class="form-input" id="name" placeholder="NAME">
+                <input type="text" class="form-input" id="gender" placeholder="GENDER">
+                <input type="text" class="form-input" id="age" placeholder="AGE">
+                <input type="text" class="form-input" id="location" placeholder="LOCATION">
 
-                <input type="url" class="user-input" placeholder="IMAGE URL">
+                <input type="url" class="form-input" placeholder="IMAGE URL">
 
             <h3 class="mb-7">Things you HATE</h3>
 
@@ -26,10 +26,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off"> Star Wars 
+                    <input type="radio" name="options1" id="option1" value="Star Wars"autocomplete="off"> Star Wars 
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Star Trek
+                    <input type="radio" name="options1" id="option2" value="Star Trek"autocomplete="off"> Star Trek
                   </label>
                 </div>
               </div>
@@ -40,10 +40,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Beach
+                    <input type="radio" name="options2" id="option1" value="Beach"autocomplete="off"> Beach
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Mountains
+                    <input type="radio" name="options2" id="option2" value="Mountains"autocomplete="off"> Mountains
                   </label>
                 </div>
               </div>
@@ -54,10 +54,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Hot Weather
+                    <input type="radio" name="options3" id="option1" value="Hot"autocomplete="off"> Hot Weather
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Cold Weather
+                    <input type="radio" name="options3" id="option2" value="Cold"autocomplete="off"> Cold Weather
                   </label>
                 </div>
               </div>
@@ -68,10 +68,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Cake
+                    <input type="radio" name="options4" id="option1" value="Cake"autocomplete="off"> Cake
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Pie
+                    <input type="radio" name="options4" id="option2" value="Pie"autocomplete="off"> Pie
                   </label>
                 </div>
               </div>
@@ -82,10 +82,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Cats
+                    <input type="radio" name="options5" id="option1" value="Cats"autocomplete="off"> Cats
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Dogs
+                    <input type="radio" name="options5" id="option2" value="Dogs"autocomplete="off"> Dogs
                   </label>
                 </div>
               </div>
@@ -96,10 +96,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> God
+                    <input type="radio" name="options6" id="option1" value="God"autocomplete="off"> God
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Satan
+                    <input type="radio" name="options6" id="option2" value="Satan"autocomplete="off"> Satan
                   </label>
                 </div>
               </div>
@@ -110,10 +110,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Republican
+                    <input type="radio" name="options7" id="option1" value="Republican"autocomplete="off"> Republican
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Democrat
+                    <input type="radio" name="options7" id="option2" value="Democrat"autocomplete="off"> Democrat
                   </label>
                 </div>
               </div>
@@ -124,10 +124,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Windows
+                    <input type="radio" name="options8" id="option1" value="Windows"autocomplete="off"> Windows
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Apple
+                    <input type="radio" name="options8" id="option2" value="Apple"autocomplete="off"> Apple
                   </label>
                 </div>
               </div>
@@ -138,10 +138,10 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Politically Correct
+                    <input type="radio" name="options9" id="option1" value="PC" autocomplete="off"> Politically Correct
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Politically Incorrect
+                    <input type="radio" name="options9" id="option2" value="NPC"autocomplete="off"> Politically Incorrect
                   </label>
                 </div>
               </div>
@@ -152,17 +152,17 @@
               <div class="col-md-12"></div>
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Carrot Top
+                    <input type="radio" name="options10" id="option1" value="CT"autocomplete="off"> Carrot Top
                   </label>
                   <label class="btn btn-danger btn-lg">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Justin Bieber
+                    <input type="radio" name="options10" id="option2" value="JB"autocomplete="off"> Justin Bieber
                   </label>
                 </div>
               </div>
             </div>
 
             {{!-- form submit button --}}
-            <button type="button" class="btn btn-danger btn-lg">Full of Hate, Ready to Date</button>
+            <button type="button" class="btn btn-danger btn-lg" id="submit">Full of Hate, Ready to Date</button>
             {{!-- <button type="submit"></button> --}}
             
           </div>

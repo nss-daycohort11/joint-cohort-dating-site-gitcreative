@@ -9,15 +9,32 @@
     'firebase': '../lib/bower_components/firebase/firebase'
   },
   shim: {
-    'bootstrap': ['jquery']
+    'bootstrap': ['jquery'],
+    'firebase' : {
+      exports: "Firebase"
+    }
   }
 });
 
-require(
-  ["dependencies"], 
-  function(_$_) {
-
-    console.log("require is working");
+requirejs(
+  ["dependencies", 
+  "login-form", 
+  "login-logo",
+  "login-bottomGraphics",  
+  "login", 
+  "profile-form", 
+  "form-button-info", 
+  "browse", 
+  "page-view"], 
+  function(dependencies, 
+    loginForm, 
+    loginLogo, 
+    loginGraphics,  
+    login, 
+    profileForm, 
+    formButtons, 
+    browseControl, 
+    pageView) {
 
     /*
       You can choose to use the REST methods to interact with

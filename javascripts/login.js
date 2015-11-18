@@ -1,14 +1,10 @@
 define(function(require) {
-  var $ = require("jquery");
-  var b = require("bootstrap");
-  var h = require("hbs");
-  var fb = require("firebase");
+  var Firebase = require("firebase");
   var loginForm = require("login-form");
   //get a reference to our Firebase app
   var ref = new Firebase("https://lovetohate.firebaseio.com");
   //create new user/account when create account button is clicked
-  $( "#create" ).click(function() {
-    console.log("button works");
+  $("body").on("click", "#create", function(event) {
     ref.createUser({
       email    : $('#email').val(),
       password : $('#password').val()
@@ -22,8 +18,7 @@ define(function(require) {
     });
   });//end create new user
   //log in user that is already set up
-  $( "#log-in" ).click(function() {
-    console.log("button works");
+  $("body").on("click", "#log-in", function() {
     ref.authWithPassword({
       email    : $('#email').val(),
       password : $('#password').val()
@@ -32,6 +27,7 @@ define(function(require) {
         console.log("Login Failed!", error);
       } else {
         console.log("Authenticated successfully with payload:", authData);
+        console.log("Authenticated successfully with payload:", authData.uid);
       }
     });
   });//end login

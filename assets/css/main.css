@@ -194,7 +194,7 @@ label.btn {
 .showcase-info {
   text-align: center; }
 
-input.user-input {
+input.form-input {
   text-align: center;
   font-size: 18px;
   border-radius: 4px;
@@ -371,6 +371,9 @@ ul, menu, dir {
   margin-left: 250px;
 
 }
+
+/*work section added because it was clipping on the network section*/
+
 
 
 
